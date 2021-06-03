@@ -2,23 +2,28 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description:
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+This EM [image](https://idr.openmicroscopy.org/webclient/?show=image-9822152) of SARS-Cov2 in the human intestine ([Lamers etal Science 2020](https://doi.org/10.1126/science.abc1669)) is over 144000 x 93000 pixels.
+It has been converted to the [OME-Zarr](https://ngff.openmicroscopy.org/latest/) format, so that individual chunks of raw pixel data can be loaded
+in parallel into the browser, and viewed with [Vizarr](https://github.com/hms-dbmi/vizarr/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Go ahead and Zoom in!
+<iframe
+  style="width: 100%; border: none; height: 550px;"
+  src="https://hms-dbmi.github.io/vizarr/v0.1?source=https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/9822152.zarr"></iframe>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+The data is hosted within a directory at [https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/9822152.zarr/](https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/9822152.zarr/)
+
+
+# Pre-print Available
+
+See our pre-print "**OME-NGFF: scalable format strategies for interoperable bioimaging data**" 
+on bioRxiv at:
+[doi.org/10.1101/2021.03.31.437929](https://doi.org/10.1101/2021.03.31.437929)
+
